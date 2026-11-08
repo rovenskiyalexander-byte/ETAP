@@ -1981,7 +1981,7 @@ function sets(){const h=sets0();return isStaff()?h:moreMenu()+h}
 
 function logoEtap(sz){sz=sz||40;
  return `<span class="logo-wrap" style="width:${sz}px;height:${sz}px;display:inline-grid;place-items:center">
-  <img class="logo-light-theme" src="images/logo.webp" width="${sz}" height="${sz}" alt="" style="width:${sz}px;height:${sz}px;object-fit:contain;border-radius:10px"/>
+  <img class="logo-light-theme" src="./logo.webp" width="${sz}" height="${sz}" alt="" style="width:${sz}px;height:${sz}px;object-fit:contain;border-radius:10px"/>
  </span>`}
 
 function shell(h,n,home){const r=D.sess.role,MORE=["clients","finance","promo","catalog","qr"],on=x=>view===x[0]||(r==="biz"&&x[0]==="settings"&&MORE.includes(view)),btn=x=>`<button class="nv ${on(x)?"on":""}" onclick="go('${x[0]}')">${ic(x[2])}${x[1]}${x[3]?`<span class="cnt">${x[3]}</span>`:""}</button>`,
